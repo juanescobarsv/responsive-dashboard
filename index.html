@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+<div class="container">
+    <!-- SIDEBAR  -->
+    <aside>
+        <div class="toggle">
+            <div class="logo">
+                <img src="./images/Fintech-logo.png" alt="Fintech Logo">
+                <a href="http://www.freepik.com" Logo designed by sentavio></a>
+                <h2>Fintech <span class="company">Ventures</span></h2>                    
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-round">
+                    close
+                </span>
+            </div>
+        </div>  
+        
+        <div class="sidebar">
+            <a href="#">
+                <span class="material-icons-round">
+                    dashboard
+                </span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    person_outline
+                </span>
+                <h3>Users</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    receipt_long
+                </span>
+                <h3>History</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons-round">
+                    insights
+                </span>
+                <h3>Analytics</h3>                
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    mail_outline
+                </span>
+                <h3>Tickets</h3>
+                <span class="message-count">12</span>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    inventory
+                </span>
+                <h3>Sales</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    report_gmailerrorred
+                </span>
+                <h3>Report Errors</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    settings
+                </span>
+                <h3>Settings</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    add
+                </span>
+                <h3>New Login</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-round">
+                    logout
+                </span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+    </aside>
+    <!-- END OF SIDEBAR -->
+
+    <!-- MAIN CONTENT  -->
+    <main>
+        <!-- ANALYTICS SECTION -->
+        <h1>Analytics</h1>
+        <div class="analytics">
+            <div class="sales">
+                <div class="status">
+                    <div class="info">
+                        <h3>Total Sales</h3>
+                        <h1>$65,500</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>+85%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visits">
+                <div class="status">
+                    <div class="info">
+                        <h3>Site Visits</h3>
+                        <h1>20,151</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>-14%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="searches">
+                <div class="status">
+                    <div class="info">
+                        <h3>Total Searches</h3>
+                        <h1>10,432</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>+8%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF ANALYTICS SECTION -->
+    
+        <!-- NEW USERS SECTION -->
+        <div class="new-users">
+            <h2>New Users</h2>
+            <div class="user-list">
+                <div class="user">
+                    <img src="./images/profile-1.jpg" alt="Latest User Number 1" Image by Freepik>
+                    <h2>Richard</h2>
+                    <p>55 minutes ago</p>
+                </div>
+                <div class="user">
+                    <img src="./images/profile-2.jpg" alt="Latest User Number 2" Image by Racool_studio on Freepik>
+                    <h2>Amber</h2>
+                    <p>3 hours ago</p>
+                </div>
+                <div class="user">
+                    <img src="./images/profile-3.jpg" alt="Latest User Number 3" Image by katemangostar on Freepik>
+                    <h2>Sam</h2>
+                    <p>5 hours ago</p>
+                </div>
+                <div class="user">
+                    <img src="./images/plus.jpg" alt="More Users" Image by rawpixel.com on Freepik>
+                    <h2>More</h2>
+                    <p class>See latest Users</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF NEW USERS SECTION -->
+
+        <!-- RECENT ORDERS -->
+        <div class="recent-orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Order Number</th>
+                        <th>Payment</th>
+                        <th>Order Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+        <!-- END OF RECENT ORDERS -->
+
+    </main>
+    <!-- END OF MAIN CONTENT  -->
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+        <!-- NAV BAR -->
+        <div class="nav">
+            <button id="menu-btn">
+                <span class="material-icons-round">
+                    menu
+                </span>
+            </button>
+            
+            <div class="dark-mode">
+                <span class="material-icons-round active">
+                    light_mode
+                </span>
+                <span class="material-icons-round">
+                    dark_mode
+                </span>
+            </div>
+
+            <div class="profile">
+                <div class="info">
+                    <h3>Hi, <b>Joel</b></h3>
+                    <h3 class="text-muted">Admin</h3>
+                </div>
+                <div class="profile-photo">
+                    <img src="./images/admin.jpg" alt="Admin Profile Photo" Image by pch.vector on Freepik>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAV BAR-->
+
+        <!-- REMINDERS SECTION -->
+        <div class="reminders">
+            <div class="header">
+                <h2>Reminders</h2>
+                <span class="material-icons-round">
+                    notifications_none
+                </span>
+            </div>
+
+            <div class="notification">
+                <div class="icon">
+                    <span class="material-icons-round">
+                        volume_up
+                    </span>
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>Team Meeting</h3>
+                        <small class="text_muted">
+                            08:00 AM - 10:00 AM
+                        </small>
+                    </div>  
+                    <span class="material-icons-round">
+                        more_vert
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="notification deactive">
+                <div class="icon">
+                    <span class="material-icons-round">
+                        edit
+                    </span>
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>Workshop</h3>
+                        <small class="text_muted">
+                            02:00 PM - 04:00 PM
+                        </small>
+                    </div>  
+                    <span class="material-icons-round">
+                        more_vert
+                    </span>
+                </div>
+            </div>
+
+            <div class="notification add-reminder">
+                <div>
+                    <span class="material-icons-round">
+                        add
+                    </span>
+                    <h3>Add Reminder</h3>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF REMINDERS -->
+        
+        <div class="user-profile">
+            <div class="logo">
+                <img src="./images/JE-logo.png" alt="Juan Escobar Logo">
+                <p>Webpage made by</p>
+                <h2>Juan Escobar</h2>
+                <p>Front-end Web Developer</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- END OF RIGHT SECTION -->
+
+</div>
+<!-- END OF CONTAINER -->
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
